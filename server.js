@@ -9,6 +9,13 @@ app.use(cors());
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
 });
+app.get("/", (req, res) => {
+  res.json({
+    message: "Product Explorer API is running",
+    endpoint: "/products",
+    status: "success"
+  });
+});
 
 app.get("/products", async (req, res) => {
   try {
