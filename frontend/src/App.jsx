@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://product-explorer-cursor-pagination.onrender.com";
 
 function App() {
   const [products, setProducts] = useState([]);
